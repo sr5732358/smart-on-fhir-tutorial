@@ -17420,7 +17420,7 @@ BBClient.authorize = function(params, errback){
       //"state="+encodeURIComponent(state)+"&"+
       //"aud="+encodeURIComponent(params.server);
     
-    var redirect_to=encodeURIComponent("https://care-stage.opisafe.com/sso/cerner?");
+    var redirect_to="https://care-stage.opisafe.com/sso/cerner?";
     if (typeof client.launch !== 'undefined' && client.launch) {
        //redirect_to += "&launch="+encodeURIComponent(client.launch);
        redirect_to += "launch="+encodeURIComponent(client.launch)+"&iss=https%3A%2F%2Ffhir-ehr.sandboxcerner.com%2Fdstu2%2F0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca";
