@@ -17422,7 +17422,7 @@ BBClient.authorize = function(params, errback){
     
     var redirect_to=encodeURIComponent(client.redirect_uri);
     if (typeof client.launch !== 'undefined' && client.launch) {
-       redirect_to += "&launch="+encodeURIComponent(client.launch);
+       redirect_to += "&launch="+encodeURIComponent(client.launch)+"&iss=https3A%2F%2Ffhir-ehr.sandboxcerner.com%2Fdstu2%2F0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca";
     }
 
     window.location.href = redirect_to;
